@@ -14,10 +14,14 @@
     </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="189dp"
-        tools:layout_editor_absoluteY="21dp" />
+        android:id="@+id/navigation_bar_view"
+        android:layout_width="400dp"
+        android:layout_height="78dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/bottom_navigation_bar_menu" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
