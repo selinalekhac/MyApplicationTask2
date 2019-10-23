@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+<!--    creating a bottom navigation bar but putting it on the top, with it always showing-->
+<!--    the food chains name, logo, and my cart button-->
+
+    <item
+        android:id="@+id/navBarName"
+        android:icon="@android:drawable/btn_star"
+        android:title="@string/borgerkong"/>
+
+    <item
+        android:id="@+id/navBarMyOrder"
+        android:icon="@android:drawable/btn_plus"
+        android:title="@string/myorder"/>
+
 </menu>

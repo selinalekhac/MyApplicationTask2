@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView_food_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:text="@string/chickenroyaleburger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_food_picture"
+        android:layout_width="113dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="45dp"
+        android:contentDescription="@string/chickenroyaleburger"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chickenroyale" />
+
+    <TextView
+        android:id="@+id/textView_small_description"
+        android:layout_width="190dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:text="@string/smalldescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_food_name" />
+
+    <TextView
+        android:id="@+id/textView_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginRight="118dp"
+        android:text="@string/price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_small_description" />
+</androidx.constraintlayout.widget.ConstraintLayout>

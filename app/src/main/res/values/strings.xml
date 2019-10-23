@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">My Application Task 2</string>
+    <string name="cheeseburger">Cheese Burger</string>
+    <string name="hamburger">Hamburger</string>
+    <string name="fries">Fries</string>
+    <string name="coke">Coca-Cola</string>
+    <string name="sundae">Sundae</string>
+    <string name="onionrings">Onion Rings</string>
+    <string name="sprite">Sprite</string>
+    <string name="fanta">Fanta</string>
+    <string name="whopperburger">Whopper Burger</string>
+    <string name="whopperjuniorburger">Whopper Junior Burger</string>
+    <string name="chickenroyaleburger">Chicken Royale Burger</string>
+    <string name="bottledwater">Bottled Water</string>
+    <string name="frozendrink">Frozen Drink</string>
+    <string name="chickenwrap">Chicken Wrap</string>
+    <string name="chickensalad">Grilled Chicken Caesar Salad</string>
+    <string name="nuggets">Chicken Nuggets</string>
+    <string name="breakfastwrap">Breakfast Wrap</string>
+    <string name="hashbrown">Hashbrown</string>
+    <string name="borgerkong">Borger Kong</string>
+    <string name="myorder">My Order</string>
+    <string name="smalldescription">A small description about this delicious food item</string>
+    <string name="price">$ Price $</string>
 </resources>
