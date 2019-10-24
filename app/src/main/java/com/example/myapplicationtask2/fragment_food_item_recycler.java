@@ -37,7 +37,7 @@ public class fragment_food_item_recycler extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
 
         FoodItemAdapter fooditemAdapter = new FoodItemAdapter();
-        fooditemAdapter.setData(nameofdatabase.getAllFoodItems());
+        fooditemAdapter.setData(FakeFoodItemDatabase.getAllFoodItems());
         recyclerView.setAdapter(fooditemAdapter);
 
         return view;
