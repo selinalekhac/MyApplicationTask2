@@ -20,9 +20,14 @@ public class Food_Item_Details extends AppCompatActivity {
     private Button addOrderButton;
     private ArrayList<FoodItem> fooditemdetail;
 
-    public void setData(ArrayList<FoodItem> fooditemdetail){
-        this.fooditemdetail = fooditemdetail;
-    }
+
+    // figuring out how to make the pictures in the article detail be different each time
+//    public void setData(ArrayList<FoodItem> fooditemdetail){
+//        this.fooditemdetail = fooditemdetail;
+//        int x;
+//        fooditemdetail = FakeFoodItemDatabase.foodimage[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]
+//    }
+
 
 
     @Override
@@ -48,6 +53,9 @@ public class Food_Item_Details extends AppCompatActivity {
         foodnameTextView.setText(foodItem.getFoodname());;
         priceTextView.setText(Integer.toString(foodItem.getPrice()));
         descriptionTextView.setText(foodItem.getFulldiscription());
+
+
+        // havent figured out to change the pics for each item yetf
         foodpicImageView.setImageResource(FakeFoodItemDatabase.foodimage[1]);
         //quantityOrderNumber = findViewById(R.id.)  haven't figured out how to input a number and store it to the database yet
 

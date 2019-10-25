@@ -17,7 +17,6 @@ import java.util.ArrayList;
 
 public class FoodItemAdapter extends RecyclerView.Adapter<FoodItemAdapter.FoodItemViewHolder> {
 
-    // figuring out how to make the pictures in the article detail be different everytime
     private ArrayList<FoodItem> fooditemsToAdapt;
     public void setData(ArrayList<FoodItem> fooditemsToAdapt){
         this.fooditemsToAdapt = fooditemsToAdapt;
