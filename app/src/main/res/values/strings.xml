@@ -28,7 +28,8 @@
     <string name="moreinfo">More Info</string>
     <string name="addtoorder">Add to Order</string>
     <string name="dollarsign">$</string>
-    <string name="orderamount">Order Amount</string>
+    <string name="orderamount">"Order Amount "</string>
     <string name="itemname">Item Name</string>
     <string name="foodpic">Food Picture</string>
+    <string name="caesarsalad">Caesar Salad</string>
 </resources>

@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class Food_Item_Details extends AppCompatActivity {
 
     private TextView foodnameTextView;
@@ -16,7 +18,11 @@ public class Food_Item_Details extends AppCompatActivity {
     private ImageView foodpicImageView;
     private TextView quantityOrderNumber;
     private Button addOrderButton;
+    private ArrayList<FoodItem> fooditemdetail;
 
+    public void setData(ArrayList<FoodItem> fooditemdetail){
+        this.fooditemdetail = fooditemdetail;
+    }
 
 
     @Override
@@ -42,9 +48,9 @@ public class Food_Item_Details extends AppCompatActivity {
         foodnameTextView.setText(foodItem.getFoodname());;
         priceTextView.setText(Integer.toString(foodItem.getPrice()));
         descriptionTextView.setText(foodItem.getFulldiscription());
-        foodpicImageView.setImageResource(foodItem.getImageDrawableID());
-        // quantityOrderNumber = findViewById(R.id.)  // haven't figured out how to input a number and store it to the database yet
-        // addOrderButton does do anything just yet
+        foodpicImageView.setImageResource(FakeFoodItemDatabase.foodimage[1]);
+        //quantityOrderNumber = findViewById(R.id.)  haven't figured out how to input a number and store it to the database yet
+
 
 
     }

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/colorYellow"
     android:layout_height="match_parent"
     tools:context=".Food_Item_Details">
 
@@ -14,6 +15,7 @@
         android:layout_marginLeft="50dp"
         android:layout_marginTop="60dp"
         android:text="@string/itemname"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,7 +25,7 @@
         android:layout_height="258dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:contentDescription="@string/foodpic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_fooditems_details_id"
@@ -35,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:text="@string/price"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView_foodpicdetails_id" />
@@ -46,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:text="@string/smalldescription"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_price_details_id" />
@@ -57,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:text="@string/orderamount"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_description_details_id" />
@@ -68,7 +70,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorRed"
         android:text="@string/addtoorder"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_quantityordered_id" />
@@ -77,10 +80,8 @@
         android:id="@+id/details_dollarsign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="387dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
         android:text="@string/dollarsign"
         app:layout_constraintEnd_toStartOf="@+id/textView_price_details_id"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView_foodpicdetails_id" />
 </androidx.constraintlayout.widget.ConstraintLayout>

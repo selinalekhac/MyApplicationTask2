@@ -17,7 +17,8 @@ import java.util.ArrayList;
 
 public class FoodItemAdapter extends RecyclerView.Adapter<FoodItemAdapter.FoodItemViewHolder> {
 
-    private ArrayList<FoodItem> fooditemsToAdapt; //if doesnt work may be arraylist name
+    // figuring out how to make the pictures in the article detail be different everytime
+    private ArrayList<FoodItem> fooditemsToAdapt;
     public void setData(ArrayList<FoodItem> fooditemsToAdapt){
         this.fooditemsToAdapt = fooditemsToAdapt;
     }
@@ -26,7 +27,7 @@ public class FoodItemAdapter extends RecyclerView.Adapter<FoodItemAdapter.FoodIt
     @Override
     public FoodItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.food_item, parent, false);
-        FoodItemViewHolder foodItemViewHolder = new FoodItemViewHolder(view); //somethings wrong here
+        FoodItemViewHolder foodItemViewHolder = new FoodItemViewHolder(view);
         return foodItemViewHolder;
     }
 
@@ -35,9 +36,7 @@ public class FoodItemAdapter extends RecyclerView.Adapter<FoodItemAdapter.FoodIt
         final FoodItem foodItemAtPosition = fooditemsToAdapt.get(position);
         holder.foodnameTextView.setText(foodItemAtPosition.getFoodname());
         holder.priceTextView.setText(Integer.toString(foodItemAtPosition.getPrice()));
-
-
-
+        holder.itemImageView.setImageResource(FakeFoodItemDatabase.foodimage[position]);
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,7 +47,6 @@ public class FoodItemAdapter extends RecyclerView.Adapter<FoodItemAdapter.FoodIt
                 context.startActivity(intent);
             }
         });
-        holder.itemImageView.setImageResource(FakeFoodItemDatabase.foodimage[position]);
 
     }
 

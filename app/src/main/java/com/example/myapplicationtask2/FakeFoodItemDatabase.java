@@ -45,7 +45,7 @@ public class FakeFoodItemDatabase {
         ));
         fooditems.put(4, new FoodItem(
                 4,
-                "Chicken Caesar Salad",
+                "Caesar Salad",
                 5,
                 "A healthy bowl of greens",
                 "A crunchy, scrumptious bowl of a variety of greens, tossed together with the freshest produce such as tomatoes, rocket, love it",

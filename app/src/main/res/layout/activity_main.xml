@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorYellow"
     tools:context=".MainActivity">
 
     <FrameLayout
@@ -11,14 +12,14 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></FrameLayout>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation_bar_view"
-        android:layout_width="400dp"
+        android:layout_width="450dp"
         android:layout_height="78dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
+        android:background="@color/colorRed"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:menu="@menu/bottom_navigation_bar_menu" />
