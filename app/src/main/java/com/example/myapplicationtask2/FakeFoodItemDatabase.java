@@ -163,6 +163,28 @@ public class FakeFoodItemDatabase {
                 "If you cannot finish the almighty whooper burger, the whooper junior is the burger for you, not only can you eat the burger you can also enjoy some fries",
                 R.drawable.sprite
         ));
+
     }
+
+    public static int[] foodimage = new int[]{
+            R.drawable.bottledwater,
+            R.drawable.breakfastwrap,
+            R.drawable.cheeseburger,
+            R.drawable.chickencaesarsalad,
+            R.drawable.chickennuggets,
+            R.drawable.chickenroyale,
+            R.drawable.chickenwrap,
+            R.drawable.coke,
+            R.drawable.fanta,
+            R.drawable.fries,
+            R.drawable.frozendrink,
+            R.drawable.hamburger,
+            R.drawable.hashbrown,
+            R.drawable.onionrings,
+            R.drawable.sprite,
+            R.drawable.sundae,
+            R.drawable.whopperburger,
+            R.drawable.whopperjunior
+    };
 
 }

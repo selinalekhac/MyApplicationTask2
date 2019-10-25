@@ -29,4 +29,6 @@
     <string name="addtoorder">Add to Order</string>
     <string name="dollarsign">$</string>
     <string name="orderamount">Order Amount</string>
+    <string name="itemname">Item Name</string>
+    <string name="foodpic">Food Picture</string>
 </resources>

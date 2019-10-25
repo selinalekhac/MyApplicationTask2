@@ -48,7 +48,7 @@ public class FoodItemAdapter extends RecyclerView.Adapter<FoodItemAdapter.FoodIt
                 context.startActivity(intent);
             }
         });
-        holder.itemImageView.setImageResource(foodItemAtPosition.getImageDrawableID());
+        holder.itemImageView.setImageResource(FakeFoodItemDatabase.foodimage[position]);
 
     }
 
