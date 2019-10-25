@@ -36,6 +36,7 @@ public class FoodItemAdapter extends RecyclerView.Adapter<FoodItemAdapter.FoodIt
         holder.foodnameTextView.setText(foodItemAtPosition.getFoodname());
         holder.priceTextView.setText(Integer.toString(foodItemAtPosition.getPrice()));
         holder.itemImageView.setImageResource(FakeFoodItemDatabase.foodimage[position]);
+        holder.descriptionTextView.setText(foodItemAtPosition.getShortdiscription());
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,12 +60,14 @@ public class FoodItemAdapter extends RecyclerView.Adapter<FoodItemAdapter.FoodIt
         public TextView foodnameTextView;
         public TextView priceTextView;
         public ImageView itemImageView;
+        public TextView descriptionTextView;
 
         public FoodItemViewHolder(View v) {
             super(v);
             view = v;
             foodnameTextView = v.findViewById(R.id.textView_food_name);
             priceTextView = v.findViewById(R.id.textView_price);
+            descriptionTextView = v.findViewById(R.id.textView_small_description);
             itemImageView = v.findViewById(R.id.imageView_food_picture);
         }
     }
