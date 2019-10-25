@@ -60,7 +60,6 @@ public class FoodItemAdapter extends RecyclerView.Adapter<FoodItemAdapter.FoodIt
         public TextView priceTextView;
         public ImageView itemImageView;
 
-        //needs a constructor
         public FoodItemViewHolder(View v) {
             super(v);
             view = v;

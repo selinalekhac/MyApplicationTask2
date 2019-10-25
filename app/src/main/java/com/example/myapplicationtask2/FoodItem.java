@@ -17,7 +17,7 @@ public class FoodItem {
         this.shortdiscription = shortdiscription;
         this.fulldiscription = fulldiscription;
 
-        // Added this line for temporary way of showing images
+        // idk how to add the picture to the fooditem detail help
         this.imageDrawableID = imageDrawableID;
     }
 
@@ -63,6 +63,7 @@ public class FoodItem {
         this.fulldiscription = fulldiscription;
     }
 
+    // help picture needs setting
     public int getImageDrawableID() {
         return imageDrawableID;
     }
