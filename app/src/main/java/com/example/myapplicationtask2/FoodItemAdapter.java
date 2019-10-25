@@ -37,6 +37,7 @@ public class FoodItemAdapter extends RecyclerView.Adapter<FoodItemAdapter.FoodIt
         holder.priceTextView.setText(Integer.toString(foodItemAtPosition.getPrice()));
 
 
+
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

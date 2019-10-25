@@ -57,7 +57,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="25dp"
-        android:text="TextView"
+        android:text="@string/orderamount"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_description_details_id" />
 
@@ -68,7 +68,18 @@
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="25dp"
-        android:text="Button"
+        android:text="@string/addtoorder"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_quantityordered_id" />
+
+    <TextView
+        android:id="@+id/details_dollarsign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="387dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/dollarsign"
+        app:layout_constraintEnd_toStartOf="@+id/textView_price_details_id"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

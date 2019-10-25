@@ -40,7 +40,7 @@ public class Food_Item_Details extends AppCompatActivity {
 
         //time to set the views and make it show the data we want it to show from the database
         foodnameTextView.setText(foodItem.getFoodname());;
-        priceTextView.setText(foodItem.getPrice());
+        priceTextView.setText(Integer.toString(foodItem.getPrice()));
         descriptionTextView.setText(foodItem.getFulldiscription());
         foodpicImageView.setImageResource(foodItem.getImageDrawableID());
         // quantityOrderNumber = findViewById(R.id.)  // haven't figured out how to input a number and store it to the database yet
