@@ -1,5 +1,7 @@
 package com.example.myapplicationtask2;
 
+//        at com.example.myapplicationtask2.FoodItemAdapter.onBindViewHolder(FoodItemAdapter.java:35)
+//        at com.example.myapplicationtask2.FoodItemAdapter.onBindViewHolder(FoodItemAdapter.java:16)
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -32,7 +34,8 @@ public class FoodItemAdapter extends RecyclerView.Adapter<FoodItemAdapter.FoodIt
     public void onBindViewHolder(@NonNull FoodItemViewHolder holder, int position) {
         final FoodItem foodItemAtPosition = fooditemsToAdapt.get(position);
         holder.foodnameTextView.setText(foodItemAtPosition.getFoodname());
-        holder.priceTextView.setText(foodItemAtPosition.getPrice());
+        holder.priceTextView.setText(Integer.toString(foodItemAtPosition.getPrice()));
+
 
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
